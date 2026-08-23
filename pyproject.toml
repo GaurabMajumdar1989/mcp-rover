@@ -1,0 +1,22 @@
+[project]
+name = "mcp-rover"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Gaurab", email = "XXXX@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "langchain-mcp-adapters>=0.3.2",
+    "langchain-openai>=1.6.0",
+    "langgraph>=1.2.11",
+    "python-dotenv>=1.2.3",
+]
+
+[project.scripts]
+mcp-rover = "mcp_rover.main:main"
+
+[build-system]
+requires = ["uv_build>=0.12.2,<0.13.0"]
+build-backend = "uv_build"
